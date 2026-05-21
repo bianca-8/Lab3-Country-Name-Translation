@@ -56,11 +56,6 @@ public class Main {
             }
             String languageCode = languageCodeConverter.fromLanguage(language);
             String translation = translator.translate(countryCode, languageCode);
-            // TODO Task: Once you switch promptForLanguage so that it returns the language
-            //            name rather than the 2-letter language code, you will need to
-            //            convert it back to its 2-letter language code when calling translate.
-            //            Note: you should use the actual names in the message printed below though,
-            //            since the user will see the displayed message.
             System.out.println(country + " in " + language + " is " + translation);
             System.out.println("Press enter to continue or quit to exit.");
             Scanner s = new Scanner(System.in);
